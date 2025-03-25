@@ -1,4 +1,4 @@
- Overview
+
 NEURA-SYNC Community Edition is a decentralized distributed AI platform that allows individuals, researchers, and small businesses to:
 
 Create their own AI clusters using local machines or cloud instances.
@@ -9,7 +9,7 @@ Leverage parallel execution for faster, large-scale AI workloads.
 
 Monitor performance with a real-time dashboard.
 
-🔥 🌐 Key Features
+ Key Features
 ✅ Distributed Execution:
 
 Split AI tasks across multiple devices for faster execution.
@@ -46,7 +46,7 @@ Free for personal and non-commercial use.
 
 Encourages collaboration and extension by the community.
 
-🚀 🔥 System Requirements
+ System Requirements
 To run NEURA-SYNC Community Edition, you need:
 
 ✅ Hardware Requirements
@@ -83,7 +83,7 @@ Node.js 18+ (for frontend)
 
 Python 3.10+ (for backend API)
 
-🔥 📁 Project Structure
+ 📁 Project Structure
 graphql
 Copy
 Edit
@@ -127,7 +127,7 @@ neura-sync-community/
 ├── docker-compose.yaml          # Docker Compose config  
 ├── README.md                    # Community Edition guide  
 └── LICENSE                      # Open-source license  
-🔥 🔥 Installation & Deployment
+ 🔥 Installation & Deployment
 ✅ 1. Clone the Repository
 bash
 Copy
@@ -168,7 +168,7 @@ arduino
 Copy
 Edit
 http://localhost:3000
-🔥 🌐 Kubernetes Deployment (Optional)
+ 🌐 Kubernetes Deployment (Optional)
 If you want to deploy with Kubernetes:
 
 Apply the Kubernetes configuration:
@@ -189,7 +189,7 @@ cpp
 Copy
 Edit
 http://<your-cluster-ip>:3000
-🔥 💻 API Endpoints
+ 💻 API Endpoints
 The FastAPI Backend exposes the following endpoints:
 
 ✅ Health Check
@@ -227,7 +227,7 @@ Copy
 Edit
 POST /api/task/start  
 → Starts a new distributed task  
-🔥 🎯 Features in the Community Edition
+ 🎯 Features in the Community Edition
 ✅ Open-Source & Free:
 
 The Community Edition is free and open-source for personal and research use.
@@ -246,7 +246,7 @@ Simple to run locally with Docker Compose.
 
 Deploy to a cluster with Kubernetes YAML files.
 
-🔥 📄 License
+ 📄 License
 ✅ Community Edition License:
 
 Free for personal and research use.
@@ -255,7 +255,7 @@ No commercial resale or monetization.
 
 Contribute and collaborate via GitHub issues and PRs.
 
-🚀 🔥 Contributing
+ 🔥 Contributing
 We welcome contributions from the community!
 To contribute:
 
@@ -265,7 +265,7 @@ Create a new branch.
 
 Submit a pull request.
 
-🚀 🔥 Conclusion
+
 ✅ NEURA-SYNC Community Edition empowers individuals and small teams to create their own distributed AI clusters.
 ✅ With real-time monitoring, checkpointing, and recovery, you can efficiently run and scale AI workloads.
 ✅ Open-source, free, and easy-to-use, making it perfect for researchers and enthusiasts. 🚀
