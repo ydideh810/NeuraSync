@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: neura-sync-postgres-svc
+  namespace: neura-sync
+  labels:
+    app: neura-sync-postgres
+spec:
+  selector:
+    app: neura-sync-postgres
+  ports:
+    - protocol: TCP
+      port: 5432              # External PostgreSQL port
+      targetPort: 5432         # DB target port
+  type: ClusterIP              # Internal access only

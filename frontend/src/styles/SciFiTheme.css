@@ -1,0 +1,34 @@
+.sci-fi-container {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #cf5d00;
+    font-family: 'Orbitron', sans-serif;
+    animation: glow 2s infinite alternate;
+  }
+  
+  .sci-fi-title {
+    font-size: 3rem;
+    color: #cf5d00;
+    text-shadow: 0 0 20px #cf5d00;
+  }
+  
+  .sci-fi-panel {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #cf5d00;
+    box-shadow: 0 0 20px #cf5d00;
+    transition: transform 0.3s;
+  }
+  
+  .sci-fi-panel:hover {
+    transform: translateY(-10px);
+  }
+  
+  .sci-fi-header {
+    border-bottom: 2px solid #cf5d00;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes glow {
+    from { box-shadow: 0 0 20px #cf5d00; }
+    to { box-shadow: 0 0 40px #cf5d00; }
+  }
+  

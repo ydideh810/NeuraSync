@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: neura-sync-redis-svc
+  namespace: neura-sync
+  labels:
+    app: neura-sync-redis
+spec:
+  selector:
+    app: neura-sync-redis
+  ports:
+    - protocol: TCP
+      port: 6379               # External Redis port
+      targetPort: 6379          # Redis target port
+  type: ClusterIP               # Internal access only

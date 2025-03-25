@@ -1,0 +1,35 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: neura-sync-ingress
+  namespace: neura-sync
+  labels:
+    app: neura-sync
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"     # For SSL/TLS (optional)
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - neura-sync.example.com                          # Replace with your domain
+      secretName: neura-sync-tls
+  rules:
+    - host: neura-sync.example.com                        # Replace with your domain
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: neura-sync-backend-svc
+                port:
+                  number: 8000
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: neura-sync-frontend-svc
+                port:
+                  number: 3000

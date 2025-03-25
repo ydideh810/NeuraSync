@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: neura-service
+spec:
+  selector:
+    app: neura-backend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+spec:
+  selector:
+    app: neura-frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: ClusterIP
